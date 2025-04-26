@@ -1,0 +1,132 @@
+body{
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  background-color: #040404;
+  padding: 30px;
+  color: #040404;
+  background-image: url('./img/note.jpg');
+  background-size: cover;
+}
+
+.app{
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: rgb(223, 222, 222);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1{
+  text-align: center;
+  color: #131313;
+}
+
+h2{
+  margin-bottom: 10px;
+  color: #131313;
+}
+
+p{
+  margin: 10px;
+}
+
+input{
+  box-sizing: border-box;
+}
+
+
+button{
+  font-weight: bold;
+  background-color: #333974;
+  color: #FFF;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button:hover{
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #040404;
+}
+
+.todo{
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.todo:hover{
+  transform: scale(1.03) rotateX(3deg) rotateY(3deg);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.complete{
+  background-color: #5cb85c;
+}
+
+.remove{
+  background-color: #d9534f;
+}
+
+.todo-forms{
+  padding-bottom: 1.5rem;
+}
+
+
+input,
+select{
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(5px);
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+
+}
+
+:focus{
+  border-color: #333974;
+  box-shadow: 0 0 5px #33397466;
+}
+
+.filter, select{
+  border-bottom: 1px solid #555;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-options div{
+  flex: 1 1 0;
+}
+
+
